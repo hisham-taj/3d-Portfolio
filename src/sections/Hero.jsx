@@ -1,9 +1,9 @@
 import { words } from "../constants/index";
 import Button from "../components/Button";
-import HeroExperience from "../components/HeroModels/HeroExperience";
+import HeroExperience from "../components/hero_models/HeroExperience";
 
 const Hero = () => {
-  return (
+return (
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
         <img src="/images/bg.png" alt="" />
@@ -43,7 +43,7 @@ const Hero = () => {
               code.
             </p>
 
-             <Button
+            <Button
               text="See My Work"
               className="md:w-80 md:h-16 w-60 h-12"
               id="counter"
@@ -51,14 +51,15 @@ const Hero = () => {
           </div>
         </header>
 
-        
-        {/* Right 3d model */}
+        {/* RIGHT: 3D Model or Visual */}
         <figure>
-          <div className="hero-3d-layout border-red-200 border-2">
-            <HeroExperience/>
+          <div className="hero-3d-layout">
+            <HeroExperience />
           </div>
         </figure>
       </div>
+
+      {/* <AnimatedCounter /> */}
     </section>
   );
 };
